@@ -54,46 +54,40 @@ Features:
 
 ### Feature 1: Filter Events By City
 
-###### 1. When user hasn’t searched for a specific city, show upcoming events from all cities.
+###### 1.Scenario: When user hasn’t searched for a specific city, show upcoming events from all cities.
 
 - _Given_ user hasn’t searched for any city;
 - _When_ the user opens the app;
 - _Then_ the user should see a list of upcoming events.
 
-###### SCENARIO 2:_User should see a list of suggestions when they search for a city._
+###### 2.Scenario: User should see a list of suggestions when they search for a city.
 
-      - Given the main page is open;
-      - When user starts typing in the city textbox;
-      - Then the user should receive a list of cities (suggestions) that match what they’ve typed.
+- _Given_ the main page is open;
+- _When_ user starts typing in the city textbox;
+- _Then_ the user should receive a list of cities (suggestions) that match what they’ve typed.
 
-###### SCENARIO 3:_User can select a city from the suggested list._
+###### 3.Scenario: User can select a city from the suggested list.
 
-      - Given user was typing “Berlin” in the city textbox AND the list of suggested cities is showing;
-      - When the user selects a city (e.g., “Berlin, Germany”) from the list;
-      - Then their city should be changed to that city (i.e., “Berlin, Germany”) AND the user should receive a list of  upcoming events in that city.
+- _Given_ user was typing “Berlin” in the city textbox AND the list of suggested cities is showing;
+- _When_ the user selects a city (e.g., “Berlin, Germany”) from the list;
+- _Then_ their city should be changed to that city (i.e., “Berlin, Germany”) AND the user should receive a list of upcoming events in that city.
 
 ### Feature 2: Show/Hide Event Details
 
-#### SCENARIO 1: An event element is collapsed by default.
+###### 1.Scenario: An event element is collapsed by default.
 
-    When user hasn’t searched for a specific city, show upcoming events from all cities.
+- _Given_ user hasn’t searched for any city;
+- _When_ the user opens the app;
+- _Then_ the user should see a list of upcoming events.
 
-      - Given user hasn’t searched for any city;
-      - When the user opens the app;
-      - Then the user should see a list of upcoming events.
+###### 2.Scenario:
 
-#### SCENARIO 2
+- _Given_ the main page is open;
+- _When_ user starts typing in the city textbox;
+- _Then_ the user should receive a list of cities (suggestions) that match what they’ve typed.
 
-User should see a list of suggestions when they search for a city.
+###### 3.Scenario:
 
-      - Given the main page is open;
-      - When user starts typing in the city textbox;
-      - Then the user should receive a list of cities (suggestions) that match what they’ve typed.
-
-#### SCENARIO 3
-
-User can select a city from the suggested list.
-
-      - Given user was typing “Berlin” in the city textbox AND the list of suggested cities is showing;
-      - When the user selects a city (e.g., “Berlin, Germany”) from the list;
-      - Then their city should be changed to that city (i.e., “Berlin, Germany”) AND the user should receive a list of  upcoming events in that city.
+- _Given_ user was typing “Berlin” in the city textbox AND the list of suggested cities is showing;
+- _When_ the user selects a city (e.g., “Berlin, Germany”) from the list;
+- _Then_ their city should be changed to that city (i.e., “Berlin, Germany”) AND the user should receive a list of upcoming events in that city.
