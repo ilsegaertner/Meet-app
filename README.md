@@ -38,15 +38,14 @@ Features:
   - the TDD technique.
   - the Google Calendar API and OAuth2 authentication flow.
   - serverless functions (AWS lambda) for the authorization server instead of using a traditional server.
-- The app works on the latest versions of Chrome, Firefox, Safari, Edge, and Opera, as well as on IE11.
+- Full compatibility, inclusive of IE11.
 - The app displays well on all screen sizes (including mobile and tablet) widths of 1920px and 320px.
 - The app passes Lighthouse’s PWA checklist.
-- The app works offline or in slow network conditions with the help of a service worker.
+- Service workers ensure offline functionality
 - Users may be able to install the app on desktop and add the app to their home screen on
   mobile.
-- The app implements an alert system using an OOP approach to show information to the
-  user.
-- The app makes use of data visualization.
+- Object-Oriented Programming (OOP) for alerts
+- The app visualizes the data of events in comparison.
 - The app is covered by tests with a coverage rate >= 90%.
 - The app is monitored using an online performance monitoring tool.
 
@@ -89,3 +88,25 @@ Features:
 ###### 2.Scenario: User can change the number of events displayed.
 
 - _Given_ the user wants to change the number of events displayed. _When_ the user enters a specific number in a text box, _then_ the number of displayed events gets updated.
+
+### Feature 4: Use the App When Offline
+
+###### 1.Scenario: Show cached data when there's no internet connection.
+
+- _Given_ the user wants to access the app, but has no internet connection. _When_ the user browses through the events page, _then_ he can still access the details of the events that were last cached.
+
+###### 2.Scenario: Show error when user changes search settings (city, number of events).
+
+- _Given_ the user wants to access the app, but has no internet connection. _When_ the user wants to change the search settings, _then_ an error message pops up.
+
+### Feature 5: Add an App Shortcut to the Home Screen
+
+###### 1.Scenario: User can install the meet app as a shortcut on their device home screen.
+
+- _Given_ the user wants to access the app from outside the web. _When_ the user selects to install the app locally, _then_ a shortcut is created on their device home screen.
+
+### Feature 6: Display Charts Visualizing Event Details
+
+###### 1.Scenario: Show a chart with the number of upcoming events in each city.
+
+- _Given_ the user is on the eventpage. _When_ the user scrolls down, _then_ a a chart with the number of upcoming events in each city is visible.
