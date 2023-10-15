@@ -54,7 +54,7 @@ Features:
 
 ### Feature 1: Filter Events By City
 
-###### When user hasn’t searched for a specific city, show upcoming events from all cities. (SCENARIO 1:)
+###### 1. When user hasn’t searched for a specific city, show upcoming events from all cities.
 
 - _Given_ user hasn’t searched for any city;
 - _When_ the user opens the app;
