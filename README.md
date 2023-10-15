@@ -52,7 +52,7 @@ Features:
 
 ## User Stories:
 
-## 1.
+## Feature 1: Filter Events By City
 
 #### SCENARIO 1:
 
