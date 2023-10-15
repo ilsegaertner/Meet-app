@@ -52,7 +52,7 @@ Features:
 
 ## User Stories:
 
-## Feature 1: Filter Events By City
+### Feature 1: Filter Events By City
 
 ###### SCENARIO 1:
 
@@ -78,7 +78,7 @@ Features:
       - When the user selects a city (e.g., “Berlin, Germany”) from the list;
       - Then their city should be changed to that city (i.e., “Berlin, Germany”) AND the user should receive a list of  upcoming events in that city.
 
-## Feature 2: Show/Hide Event Details
+### Feature 2: Show/Hide Event Details
 
 #### SCENARIO 1: An event element is collapsed by default.
 
