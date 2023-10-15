@@ -54,7 +54,7 @@ Features:
 
 ## Feature 1: Filter Events By City
 
-##### SCENARIO 1:
+###### SCENARIO 1:
 
 #### _When user hasn’t searched for a specific city, show upcoming events from all cities._
 
