@@ -62,13 +62,17 @@ Features:
       - When the user opens the app;
       - Then the user should see a list of upcoming events.
 
-#### SCENARIO 2: User should see a list of suggestions when they search for a city.
+###### SCENARIO 2:
+
+#### _User should see a list of suggestions when they search for a city._
 
       - Given the main page is open;
       - When user starts typing in the city textbox;
       - Then the user should receive a list of cities (suggestions) that match what they’ve typed.
 
-#### SCENARIO 3: User can select a city from the suggested list.
+###### SCENARIO 3:
+
+#### _User can select a city from the suggested list._
 
       - Given user was typing “Berlin” in the city textbox AND the list of suggested cities is showing;
       - When the user selects a city (e.g., “Berlin, Germany”) from the list;
