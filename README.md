@@ -70,16 +70,22 @@ Features:
 
 ###### 1.Scenario: An event element is collapsed by default.
 
-- _Given_ the user is browsing through the events of a city. _When_ the user tries to access the details of an event of a city,_then_ the information inside the button/link is toggling, showing or hiding additional information about the event, depending on its initial state (expanded/collapsed).
+- _Given_ the user is browsing through the events of a city. _When_ the user browses through the events page, _then_ all further information and details of a specific event are not visible on the button/link or space of the specific city.
 
 ###### 2.Scenario: User can expand an event to see details.
 
-- _Given_ the user tries to get information on a event
-- _When_ the user clicks on the event
-- _Then_ the details of the events are expanded
+- _Given_ the user is viewing the eventspage. _When_ the user clicks on the detail button of an event, _then_ the details of the events are turning up and get visible around the button.
 
 ###### 3.Scenario: User can collapse an event to hide details.
 
-- _Given_
-- _When_
-- _Then_
+- _Given_ the user is viewing the eventspage and for some event the details are expanded. _When_ the user clicks on "Hide details", _then_ the event details get respectively collapsed and vanish.
+
+### Feature 3: Specify Number of Events
+
+###### 1.Scenario: When user hasn't specified a number, 32 events are shown by default.
+
+- _Given_ the user has not specified a limit in the number of the events shown. _When_ the user browses through the events page, _then_ the page limits the amount of events visible to 32 events.
+
+###### 2.Scenario: User can change the number of events displayed.
+
+- _Given_ the user wants to change the number of events displayed. _When_ the user enters a specific number in a text box, _then_ the number of displayed events gets updated.
