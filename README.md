@@ -56,9 +56,9 @@ Features:
 
 ###### SCENARIO 1:_When user hasn’t searched for a specific city, show upcoming events from all cities._
 
-- Given user hasn’t searched for any city;
-- When the user opens the app;
-- Then the user should see a list of upcoming events.
+- _Given_ user hasn’t searched for any city;
+- _When_ the user opens the app;
+- _Then_ the user should see a list of upcoming events.
 
 ###### SCENARIO 2:_User should see a list of suggestions when they search for a city._
 
