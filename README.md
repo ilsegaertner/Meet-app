@@ -56,27 +56,21 @@ Features:
 
 ###### 1.Scenario: When user hasn’t searched for a specific city, show upcoming events from all cities.
 
-- _Given_ user hasn’t searched for any city;
-- _When_ the user opens the app;
-- _Then_ the user should see a list of upcoming events.
+- _Given_ user hasn’t searched for any city._When_ the user opens the app, _then_ the user should see a list of upcoming events.
 
 ###### 2.Scenario: User should see a list of suggestions when they search for a city.
 
-- _Given_ the main page is open;
-- _When_ user starts typing in the city textbox;
-- _Then_ the user should receive a list of cities (suggestions) that match what they’ve typed.
+- _Given_ the main page is open._When_ user starts typing in the city textbox, _then_ the user should receive a list of cities (suggestions) that match what they’ve typed.
 
 ###### 3.Scenario: User can select a city from the suggested list.
 
-- _Given_ user was typing “Berlin” in the city textbox AND the list of suggested cities is showing;
-- _When_ the user selects a city (e.g., “Berlin, Germany”) from the list;
-- _Then_ their city should be changed to that city (i.e., “Berlin, Germany”) AND the user should receive a list of upcoming events in that city.
+- _Given_ user was typing “Berlin” in the city textbox AND the list of suggested cities is showing. _When_ the user selects a city (e.g., “Berlin, Germany”) from the list, _then_ their city should be changed to that city (i.e., “Berlin, Germany”) AND the user should receive a list of upcoming events in that city.
 
 ### Feature 2: Show/Hide Event Details
 
 ###### 1.Scenario: An event element is collapsed by default.
 
-- _Given_ the user is browsing through the events of a city._When_ the user tries to access the details of an event of a city,_Then_ the information inside the button/link is toggling, showing or hiding additional information about the event, depending on its initial state (expanded/collapsed).
+- _Given_ the user is browsing through the events of a city._When_ the user tries to access the details of an event of a city,_then_ the information inside the button/link is toggling, showing or hiding additional information about the event, depending on its initial state (expanded/collapsed).
 
 ###### 2.Scenario: User can expand an event to see details.
 
