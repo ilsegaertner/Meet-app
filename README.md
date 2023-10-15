@@ -76,15 +76,13 @@ Features:
 
 ###### 1.Scenario: An event element is collapsed by default.
 
-- _Given_
-- _When_
-- _Then_
+- _Given_ the user is browsing through the events of a city._When_ the user tries to access the details of an event of a city,_Then_ the information inside the button/link is toggling, showing or hiding additional information about the event, depending on its initial state (expanded/collapsed).
 
 ###### 2.Scenario: User can expand an event to see details.
 
-- _Given_
-- _When_
-- _Then_
+- _Given_ the user tries to get information on a event
+- _When_ the user clicks on the event
+- _Then_ the details of the events are expanded
 
 ###### 3.Scenario: User can collapse an event to hide details.
 
