@@ -52,9 +52,9 @@ Features:
 
 ## User Stories:
 
-1.
+## 1.
 
-# SCENARIO 1:
+#### SCENARIO 1:
 
     When user hasn’t searched for a specific city, show upcoming events from all cities.
 
@@ -62,7 +62,7 @@ Features:
       - When the user opens the app;
       - Then the user should see a list of upcoming events.
 
-# SCENARIO 2
+#### SCENARIO 2
 
 User should see a list of suggestions when they search for a city.
 
@@ -70,7 +70,7 @@ User should see a list of suggestions when they search for a city.
       - When user starts typing in the city textbox;
       - Then the user should receive a list of cities (suggestions) that match what they’ve typed.
 
-# SCENARIO 3
+#### SCENARIO 3
 
 User can select a city from the suggested list.
 
