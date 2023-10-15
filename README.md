@@ -76,18 +76,18 @@ Features:
 
 ###### 1.Scenario: An event element is collapsed by default.
 
-- _Given_ user hasn’t searched for any city;
-- _When_ the user opens the app;
-- _Then_ the user should see a list of upcoming events.
+- _Given_
+- _When_
+- _Then_
 
-###### 2.Scenario:
+###### 2.Scenario: User can expand an event to see details.
 
-- _Given_ the main page is open;
-- _When_ user starts typing in the city textbox;
-- _Then_ the user should receive a list of cities (suggestions) that match what they’ve typed.
+- _Given_
+- _When_
+- _Then_
 
-###### 3.Scenario:
+###### 3.Scenario: User can collapse an event to hide details.
 
-- _Given_ user was typing “Berlin” in the city textbox AND the list of suggested cities is showing;
-- _When_ the user selects a city (e.g., “Berlin, Germany”) from the list;
-- _Then_ their city should be changed to that city (i.e., “Berlin, Germany”) AND the user should receive a list of upcoming events in that city.
+- _Given_
+- _When_
+- _Then_
