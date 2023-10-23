@@ -110,3 +110,9 @@ Features:
 ###### 1.Scenario: Show a chart with the number of upcoming events in each city.
 
 - _Given_ the user is on the eventpage. _When_ the user scrolls down, _then_ a a chart with the number of upcoming events in each city is visible.
+
+## Usage of serverless functions
+
+#####
+
+My meet app will use serverless functions for the business logic of my backend. As step 1, I will create serverless functions to navigate between the OAuth Server and my app to be able to request the Google OAuth consent modal, as well as the redirection between Google and the app. In the second step, my serverless functions handle the exchange of Authorization code and - if successfully granted by OAuth Provide - the final access Access token that enables the user to use the Google Calendar App. The last step also includes the AWS Lambda functions that communicate the successful returning and rendering of the events to the user in the app.
