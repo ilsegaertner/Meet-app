@@ -21,7 +21,9 @@ be the future of web development.
 - visual context through graphs to display any type of data and produce a variety of output formats:
   The app will allow users to search for a city and get a list of events hosted in that city. Two charts shows how many events will take place in each location, as well as the popularity of event genres.
 
-To see the hosted App, click [here](https://ilsegaertner.github.io/Meet-app/).
+To see the hosted App, click <a href="https://ilsegaertner.github.io/Meet-app/" target="_blank">here</a>.
+
+ <!-- [here](https://ilsegaertner.github.io/Meet-app/). -->
 
 ## Project requirements and features
 
