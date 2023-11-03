@@ -80,7 +80,7 @@ module.exports.getCalendarEvents = async (event) => {
   const access_token = decodeURIComponent(
     `${event.pathParameters["access-token"]}`
   );
-  oAuth2Client.setCredentials({ "access-token": access_token });
+  oAuth2Client.setCredentials({ access_token });
 
   return new Promise((resolve, reject) => {
     calendar.events.list(
