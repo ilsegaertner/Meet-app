@@ -45,35 +45,24 @@ describe("<Event /> Component", () => {
     const detailsSection = EventComponent.queryByRole("listitem");
 
     //    Verify that the details section is initially hidden
-    // expect(detailsSection).not.toBeInTheDocument();
-    expect(detailsSection).toHaveClass("hide-details");
-
-    // // Check that the "show details" button is present
+    expect(detailsSection).toHaveClass("details-hidden");
     expect(showDetailsButton).toBeInTheDocument();
 
     await user.click(showDetailsButton);
-    // expect(EventComponent.queryByText("show details")).not.toBeInTheDocument();
-    // const updatedDetailsSection = EventComponent.queryByRole("listitem");
-
-    // EventComponent.rerender(<Event event={event} />);
-
+    const updatedDetailsSection = EventComponent.queryByRole("listitem");
     // expect(updatedDetailsSection).toBeDefined();
     // expect(updatedDetailsSection).toBeInTheDocument();
-    // expect(detailsSection).toBeVisible();
-    expect(detailsSection).toHaveClass("show-details");
+    expect(updatedDetailsSection).toHaveClass("details-shown");
+    expect(updatedDetailsSection).toBeVisible();
+  });
 
-    //   test("hides the details section when the user clicks on the 'hide details' button", async () => {
-    //     const user = userEvent.setup();
-    //     const showDetailsButton = EventComponent.queryByText("show details");
-    //     const hideDetailsButton = EventComponent.queryByText("hide details");
-    //     const detailsSection = EventComponent.querySelector(".show-details");
-
-    //     expect(detailsSection).toBeInTheDocument();
-    //     expect(hideDetailsButton).toBeInTheDocument();
-
-    //     await user.click(hideDetailsButton);
-    //     expect(detailsSection).not.toBeInTheDocument();
-    //     expect(detailsSection).toHaveClass(".hide-details");
-    //   });
+  test("hides the details section when the user clicks on the 'hide details' button", async () => {
+    const user = userEvent.setup();
+    const hideDetailsButton = EventComponent.queryByText("hide details");
+    const detailsSection = EventComponent.queryByRole("listitem");
+    await user.click(hideDetailsButton);
+    EventComponent.rerender(<Event event={event} />);
+    const updatedDetailsSection = EventComponent.queryByRole("listitem");
+    expect(updatedDetailsSection).toHaveClass("details-hidden");
   });
 });
