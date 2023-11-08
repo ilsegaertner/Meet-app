@@ -16,6 +16,7 @@ const NumberOfEvents = () => {
         value={value}
         onChange={handleInput}
         maxLength={3}
+        placeholder="how many events do you want to see?"
       />
     </div>
   );

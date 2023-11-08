@@ -50,4 +50,13 @@ describe("<NumberOfEvents /> Component", () => {
     const inputValue = numbersInput.value;
     expect(inputValue).toHaveLength(3);
   });
+
+  test("shows a placeholder when no input is visible", async () => {
+    const numbersInput = NumberOfEventsComponent.queryByRole("textbox");
+    const user = userEvent.setup();
+    user.clear(numbersInput);
+    expect(numbersInput.placeholder).toBe(
+      "how many events do you want to see?"
+    );
+  });
 });
