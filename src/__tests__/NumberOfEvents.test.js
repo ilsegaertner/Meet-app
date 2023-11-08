@@ -42,4 +42,14 @@ describe("<NumberOfEvents /> Component", () => {
     user.type(numbersInput, "abc123");
     expect(numbersInput.value).toBe("32");
   });
+
+  test("limits input length to a max-value", async () => {
+    const numbersInput = NumberOfEventsComponent.queryByRole("textbox");
+    const user = userEvent.setup();
+
+    await user.type(numbersInput, "1234");
+    const inputValue = numbersInput.value;
+
+    expect(inputValue).toHaveLength(3);
+  });
 });
