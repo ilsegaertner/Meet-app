@@ -15,14 +15,18 @@ const Event = ({ event }) => {
       </button>
       {/* <button>Hide Details</button>
       <button>Show Details</button> */}
-      <li className={`show-details ${detailsVisible ? "" : "hide-details"}`}>
+      <li
+        className={`show-details ${
+          detailsVisible ? "details-shown" : "details-hidden"
+        }`}
+      >
         <h3>{event.summary}</h3>
         <p>{event.location}</p>
         <p>{event.start.dateTime}</p>
         <p>{event.description}</p>
         <p>{event.created}</p>
       </li>
-    </div> // <li> instead of <div role="listitem"> as <li> elements have role="listitem" by default
+    </div>
   );
 };
 
