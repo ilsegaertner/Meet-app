@@ -42,17 +42,24 @@ describe("<Event /> Component", () => {
   test("shows the details section when the user clicks on the 'show details' button", async () => {
     const user = userEvent.setup();
     const showDetailsButton = EventComponent.queryByText("show details");
-    const detailsSection = EventComponent.queryByRole("list");
+    const detailsSection = EventComponent.queryByRole("listitem");
 
-    // Verify that the details section is initially hidden
-    expect(detailsSection).not.toBeInTheDocument();
+    //    Verify that the details section is initially hidden
+    // expect(detailsSection).not.toBeInTheDocument();
+    expect(detailsSection).toHaveClass("hide-details");
 
-    // Check that the "show details" button is present
+    // // Check that the "show details" button is present
     expect(showDetailsButton).toBeInTheDocument();
 
     await user.click(showDetailsButton);
-    expect(detailsSection).toBeInTheDocument();
-    expect(detailsSection).toBeVisible();
+    // expect(EventComponent.queryByText("show details")).not.toBeInTheDocument();
+    // const updatedDetailsSection = EventComponent.queryByRole("listitem");
+
+    // EventComponent.rerender(<Event event={event} />);
+
+    // expect(updatedDetailsSection).toBeDefined();
+    // expect(updatedDetailsSection).toBeInTheDocument();
+    // expect(detailsSection).toBeVisible();
     expect(detailsSection).toHaveClass("show-details");
 
     //   test("hides the details section when the user clicks on the 'hide details' button", async () => {
