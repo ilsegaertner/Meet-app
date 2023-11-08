@@ -39,34 +39,34 @@ describe("<Event /> Component", () => {
     expect(hideDetailsButton).not.toBeInTheDocument();
   });
 
-  // test("shows the details section when the user clicks on the 'show details' button", async () => {
-  //   const user = userEvent.setup();
-  //   const showDetailsButton = EventComponent.queryByText("show details");
-  //   const detailsSection = EventComponent.querySelector(".show-details");
+  test("shows the details section when the user clicks on the 'show details' button", async () => {
+    const user = userEvent.setup();
+    const showDetailsButton = EventComponent.queryByText("show details");
+    const detailsSection = EventComponent.queryByRole("list");
 
-  //   // Verify that the details section is initially hidden
-  //   expect(detailsSection).not.toBeInTheDocument();
+    // Verify that the details section is initially hidden
+    expect(detailsSection).not.toBeInTheDocument();
 
-  //   // Check that the "show details" button is present
-  //   expect(showDetailsButton).toBeInTheDocument();
+    // Check that the "show details" button is present
+    expect(showDetailsButton).toBeInTheDocument();
 
-  //   await user.click(detailsButton);
-  //   expect(detailsSection).toBeInTheDocument();
-  //   expect(detailsSection).toBeVisible();
-  //   expect(detailsSection).toHaveClass("show-details");
-  // });
+    await user.click(showDetailsButton);
+    expect(detailsSection).toBeInTheDocument();
+    expect(detailsSection).toBeVisible();
+    expect(detailsSection).toHaveClass("show-details");
 
-  //   test("hides the details section when the user clicks on the 'hide details' button", async () => {
-  //     const user = userEvent.setup();
-  //     const showDetailsButton = EventComponent.queryByText("show details");
-  //     const hideDetailsButton = EventComponent.queryByText("hide details");
-  //     const detailsSection = EventComponent.querySelector(".show-details");
+    //   test("hides the details section when the user clicks on the 'hide details' button", async () => {
+    //     const user = userEvent.setup();
+    //     const showDetailsButton = EventComponent.queryByText("show details");
+    //     const hideDetailsButton = EventComponent.queryByText("hide details");
+    //     const detailsSection = EventComponent.querySelector(".show-details");
 
-  //     expect(detailsSection).toBeInTheDocument();
-  //     expect(hideDetailsButton).toBeInTheDocument();
+    //     expect(detailsSection).toBeInTheDocument();
+    //     expect(hideDetailsButton).toBeInTheDocument();
 
-  //     await user.click(hideDetailsButton);
-  //     expect(detailsSection).not.toBeInTheDocument();
-  //     expect(detailsSection).toHaveClass(".hide-details");
-  //   });
+    //     await user.click(hideDetailsButton);
+    //     expect(detailsSection).not.toBeInTheDocument();
+    //     expect(detailsSection).toHaveClass(".hide-details");
+    //   });
+  });
 });
