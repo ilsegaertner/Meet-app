@@ -1,12 +1,16 @@
 // import { getEvents } from "../api";
-import { render } from "@testing-library/react";
+import { render, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import NumberOfEvents from "../components/NumberOfEvents";
+import App from "../App";
+import { extractLocations, getEvents } from "../api";
 
 describe("<NumberOfEvents /> Component", () => {
   let NumberOfEventsComponent;
   beforeEach(() => {
-    NumberOfEventsComponent = render(<NumberOfEvents />);
+    NumberOfEventsComponent = render(
+      <NumberOfEvents setCurrentNOE={() => {}} />
+    );
   });
 
   test("renders numbers input", () => {
