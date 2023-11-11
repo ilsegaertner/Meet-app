@@ -10,6 +10,7 @@ const NumberOfEvents = () => {
 
   return (
     <div id="number-of-events">
+      <label htmlFor="event-numbers">Number of Events: </label>
       <input
         type="textbox"
         className="event-numbers"
