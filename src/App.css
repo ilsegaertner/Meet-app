@@ -3,13 +3,11 @@
   text-align: center;
   /* padding: 2% 5%; */
   padding: 7% 15%;
-  /* background-color: #fffcf6; */
-  background-color: #eae3d7;
+  background-color: #fffcf6;
 }
 
 .App * {
   box-sizing: border-box;
-  color: #403c39;
 }
 
 ul {
@@ -36,7 +34,7 @@ input[type="number"] {
 }
 
 .city {
-  width: 285px;
+  width: 250px;
 }
 
 #city-search {
@@ -79,20 +77,17 @@ input[type="number"] {
   text-align: left;
   /* border: 1px solid #ccc; */
   /* border: 1px solid #1c0b6c; */
-  border: 1px dotted #3957a5;
   border-radius: 4px;
   position: relative;
 }
 
 .event:nth-child(2n) {
-  /* background-color: #fff7e1; */
-  /* border-radius: 8px; */
-  background-color: #dbb180;
+  background-color: #fff7e1;
+  border-radius: 8px;
 }
 
 p:nth-child(2n) {
-  /* color: #98b36c; */
-  color: #3957a5;
+  color: #98b36c;
 }
 /* 
 h3 {
