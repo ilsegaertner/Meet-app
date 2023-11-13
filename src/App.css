@@ -89,15 +89,19 @@ input[type="number"] {
 .event:nth-child(2n) {
   background-color: #f9f9f9;
   border-radius: 8px;
+
+  /* background: rgb(255,255,255);
+  background: linear-gradient(101deg, rgb(163 163 163) 0%, rgb(238 238 238) 100%); */
 }
 
 p:nth-child(2n) {
   color: #98b36c;
 }
-/* 
+
 h3 {
-  color: #ffffff;
-} */
+  color: #e88e5e;
+  text-shadow: 0.5px 0.5px #dadada;
+}
 
 .details-btn {
   position: absolute;
@@ -159,4 +163,9 @@ li:nth-child(2n) > .details > p:nth-of-type(2) {
   background-color: #eaeaea;
   padding: 82px;
   border-radius: 8px;
+}
+
+li:nth-child(2n) > h3 {
+  color: #000000;
+  text-shadow: 0.5px 0.5px #dadada;
 }
