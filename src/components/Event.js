@@ -20,7 +20,7 @@ const Event = ({ event }) => {
       {showDetails ? (
         <div className="details">
           <h4>Event Details</h4>
-          <p>Description: {event.description}</p>
+          <p> {event.description}</p>
           <p>Event created: {event.created}</p>
         </div>
       ) : null}
