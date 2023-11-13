@@ -148,3 +148,15 @@ li:nth-child(2n) > button {
   background-color: #fafff240;
   color: #1f0e4f;
 }
+
+li:nth-child(2n) > .details > p {
+  background-color: #200e50;
+  padding: 82px;
+  border-radius: 8px;
+}
+
+li:nth-child(2n) > .details > p:nth-of-type(2) {
+  background-color: #eaeaea;
+  padding: 82px;
+  border-radius: 8px;
+}
