@@ -59,7 +59,9 @@ input[type="number"] {
 .suggestions > li {
   text-align: left;
   padding: 8px 6px 8px 10px;
-  background-color: #eee;
+  /* background-color: #eee; */
+  /* background-color: #fffb9f; */
+  background-color: #98b36c;
   cursor: default;
 }
 
@@ -69,7 +71,9 @@ input[type="number"] {
 }
 
 .suggestions > li:hover {
-  background-color: #bcdcdb;
+  /* background-color: #bcdcdb; */
+  background-color: #1f0e4f;
+  color: #f9f9f9;
 }
 
 .event {
@@ -121,4 +125,21 @@ h3 {
 .number-of-events-label {
   font-size: 0.95rem;
   color: #757575;
+}
+
+.details {
+  /* background-color: #757575; */
+  padding-top: 11px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid red;
+  /* border: 1px solid green; */
+  /* border-color: #1f0e4f; */
+}
+
+input:focus-visible {
+  /* border-color: #98b36c; */
+  border: 2px solid #1f0e4f;
 }
