@@ -79,7 +79,7 @@ input[type="number"] {
   text-align: left;
   /* border: 1px solid #ccc; */
   /* border: 1px solid #1c0b6c; */
-  /* border: 1px dotted #3957a5; */
+  border: 1px dotted #3957a5;
   border-radius: 4px;
   position: relative;
 }
