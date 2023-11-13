@@ -5,8 +5,8 @@ const Spinner = () => {
   return (
     <div className="spinner-container">
       <ProgressBar
-        height="80"
-        width="80"
+        height="30"
+        width="30"
         ariaLabel="progress-bar-loading"
         wrapperStyle={{}}
         wrapperClass="progress-bar-wrapper"
