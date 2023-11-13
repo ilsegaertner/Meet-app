@@ -3,7 +3,8 @@
   text-align: center;
   /* padding: 2% 5%; */
   padding: 7% 15%;
-  background-color: #fffcf6;
+  /* background-color: #fffcf6; */
+  background-color: white;
 }
 
 .App * {
@@ -29,12 +30,12 @@ input[type="number"] {
   font-size: 14px;
   line-height: 20px;
   align-self: center;
-  height: 38px;
+  height: 36px;
   margin-bottom: 20px;
 }
 
 .city {
-  width: 288px;
+  width: 284px;
 }
 
 #city-search {
@@ -82,7 +83,7 @@ input[type="number"] {
 }
 
 .event:nth-child(2n) {
-  background-color: #fff7e1;
+  background-color: #f9f9f9;
   border-radius: 8px;
 }
 
@@ -105,12 +106,12 @@ h3 {
 }
 
 .event-numbers {
-  margin: 6px 0px;
+  margin: 1px 1px;
   padding: 1px 3px;
   border-radius: 4px;
   border: 1px solid #ccc;
   align-self: center;
-  height: 26px;
+  height: 22px;
   margin-bottom: 21px;
 }
 
