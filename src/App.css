@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 .App {
   text-align: center;
-  padding: 2% 5%;
+  /* padding: 2% 5%; */
+  padding: 7% 15%;
+  background-color: #fffcf6;
 }
 
 .App * {
@@ -15,6 +17,7 @@ ul {
 
 p {
   margin: 5px 0;
+  color: #564f94;
 }
 
 input[type="text"],
@@ -72,10 +75,24 @@ input[type="number"] {
   padding: 10px 10px 35px;
   margin-bottom: 10px;
   text-align: left;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
+  /* border: 1px solid #1c0b6c; */
   border-radius: 4px;
   position: relative;
 }
+
+.event:nth-child(2n) {
+  background-color: #fff7e1;
+  border-radius: 8px;
+}
+
+p:nth-child(2n) {
+  color: #98b36c;
+}
+/* 
+h3 {
+  color: #ffffff;
+} */
 
 .details-btn {
   position: absolute;
