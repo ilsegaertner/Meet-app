@@ -13,7 +13,7 @@ const CitySearch = ({ allLocations, setCurrentCity }) => {
     const value = event.target.value;
     const filteredLocations = allLocations
       ? allLocations.filter((location) => {
-          return location.toUpperCase().indexOf(value.toUpperCase()) > -1;
+          return location.toUpperCase().indexOf(value.toUpperCase()) > -1; //The location.toUpperCase().indexOf(value.toUpperCase()) > -1 condition returns true if the value string is found within the location string, otherwise false.
         })
       : [];
 

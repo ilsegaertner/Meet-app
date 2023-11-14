@@ -11,7 +11,7 @@ const App = () => {
   const [currentNOE, setCurrentNOE] = useState(32); // current number of events
   const [allLocations, setAllLocations] = useState([]);
   const [currentCity, setCurrentCity] = useState("See all cities");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); // spinner
 
   useEffect(() => {
     fetchData();

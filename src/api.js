@@ -62,8 +62,9 @@ const getToken = async (code) => {
 };
 
 export const getAccessToken = async () => {
+  // Fetches the access token from local storage.
   const accessToken = localStorage.getItem("access_token");
-  const tokenCheck = accessToken && (await checkToken(accessToken));
+  const tokenCheck = accessToken && (await checkToken(accessToken)); // Checks the validity of the token by using checkToken.
 
   if (!accessToken || tokenCheck.error) {
     await localStorage.removeItem("access_token");
@@ -77,7 +78,7 @@ export const getAccessToken = async () => {
       const { authUrl } = result;
       return (window.location.href = authUrl);
     }
-    return code && getToken(code);
+    return code && getToken(code); // Exchanging code for access token here. the && operator returns the last evaluated expression if both operands are truthy.
   }
   return accessToken;
 };
