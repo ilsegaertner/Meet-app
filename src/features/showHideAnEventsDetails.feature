@@ -8,6 +8,7 @@ Feature: Show and hide event details
     When the user clicks on the detail button of an event
     Then the event details should be displayed around the button.
   Scenario: User can collapse event details.
-    Given the user is viewing the events page and some event details are expanded
+    Given the user is viewing the events page 
+    And some event details are expanded
     When the user clicks on "Hide details" for that event
     Then the event details should be collapsed and hidden.
