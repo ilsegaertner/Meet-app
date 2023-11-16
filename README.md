@@ -71,17 +71,17 @@ Features:
 
 ### Feature 2: Show/Hide Event Details
 
-###### 1.Scenario: An event element is collapsed by default.
+###### 1.Scenario: Event element is collapsed by default.
 
-- _Given_ the user is browsing through the events of a city. _When_ the user browses through the events page, _then_ all further information and details of a specific event are not visible on the button/link or space of the specific city.
+- _Given_ the user is browsing events in a city. _When_ the user views the events page, _then_ the details of a specific event should be hidden by default.
 
-###### 2.Scenario: User can expand an event to see details.
+###### 2.Scenario: User can expand event details.
 
-- _Given_ the user is viewing the eventspage. _When_ the user clicks on the detail button of an event, _then_ the details of the events are turning up and get visible around the button.
+- _Given_ the user is viewing the eventspage. _When_ the user clicks on the detail button of an event, _then_ the event details should be displayed around the button.
 
-###### 3.Scenario: User can collapse an event to hide details.
+###### 3.Scenario: User can collapse event details.
 
-- _Given_ the user is viewing the eventspage and for some event the details are expanded. _When_ the user clicks on "Hide details", _then_ the event details get respectively collapsed and vanish.
+- _Given_ the user is viewing the events page and some event details are expanded. _When_ the user clicks on "Hide details" for that event, _then_ the event details should be collapsed and hidden.
 
 ### Feature 3: Specify Number of Events
 
