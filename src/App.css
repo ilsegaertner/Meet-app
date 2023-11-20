@@ -26,7 +26,8 @@ input[type="number"] {
   padding: 8px 6px 8px 10px;
   border-radius: 4px;
   outline: none;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
+  border: 1px solid #200e50;
   font-size: 14px;
   line-height: 20px;
   align-self: center;
@@ -120,7 +121,8 @@ h3 {
   margin: 1px 1px;
   padding: 1px 3px;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid #200e50;
+  /* border: 1px solid #ccc; */
   align-self: center;
   height: 22px;
   margin-bottom: 21px;
