@@ -7,6 +7,9 @@
   /* background-color: #fafafa33; */
   background-color: white;
   margin-top: 10px;
+  border: 2px solid #210e50;
+  border-radius: 68px;
+  padding: 50px;
 }
 
 .App * {
