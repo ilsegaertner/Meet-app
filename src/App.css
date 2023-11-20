@@ -4,7 +4,8 @@
   padding: 2% 5%;
   /* padding: 7% 15%; */
   /* background-color: #fffcf6; */
-  background-color: #fafafa33;
+  /* background-color: #fafafa33; */
+  background-color: white;
   margin-top: 10px;
 }
 
@@ -27,8 +28,8 @@ input[type="number"] {
   padding: 8px 6px 8px 10px;
   border-radius: 4px;
   outline: none;
-  /* border: 1px solid #ccc; */
-  border: 1px solid #200e50;
+  border: 1px solid #ccc;
+  /* border: 1px solid #200e50; */
   font-size: 14px;
   line-height: 20px;
   align-self: center;
@@ -122,8 +123,8 @@ h3 {
   margin: 1px 1px;
   padding: 1px 3px;
   border-radius: 4px;
-  border: 1px solid #200e50;
-  /* border: 1px solid #ccc; */
+  /* border: 1px solid #200e50; */
+  border: 1px solid #ccc;
   align-self: center;
   height: 22px;
   margin-bottom: 21px;
@@ -171,13 +172,4 @@ li:nth-child(2n) > .details > p:nth-of-type(2) {
 li:nth-child(2n) > h3 {
   color: #000000;
   text-shadow: 0.5px 0.5px #dadada;
-}
-
-.ball {
-  width: 30px;
-  height: 30px;
-  background-color: #ebd034;
-  border-radius: 50%;
-  position: fixed;
-  z-index: 9999;
 }
