@@ -21,7 +21,7 @@ const Event = ({ event }) => {
         <div className="details">
           <h4>Event Details</h4>
           <p> {event.description}</p>
-          <p>Event created: {event.created}</p>
+          {/* <p>Event created: {event.created}</p> */}
         </div>
       ) : null}
     </li>
