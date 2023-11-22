@@ -69,6 +69,7 @@ input[type="number"] {
   /* font-size: 14px; */
   font-size: 18px;
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
 }
 
 .suggestions > li {
@@ -78,6 +79,7 @@ input[type="number"] {
   /* background-color: #fffb9f; */
   background-color: #98b36c;
   cursor: default;
+  cursor: pointer;
 }
 
 .suggestions > li:last-child {
