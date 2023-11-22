@@ -8,14 +8,21 @@
   background-color: white;
   margin: 10px 10px;
   /* border: 2px solid #210e50; */
-  border-radius: 4vh;
+  border-radius: 1vh;
   padding: 28px;
 
   background: linear-gradient(white, white) padding-box,
     linear-gradient(to right, #200e50, #98b36c) border-box;
+  /* background: (#ffe4fe, #ffd9d9) padding-box,
+    linear-gradient(to right, #200e50, #98b36c) border-box; */
   /* border-radius: 50em; */
   border: 4px solid transparent;
   font-size: 18px;
+}
+
+body {
+  /* background-color: #548b58; */
+  background-color: #499b7e;
 }
 
 .App * {
@@ -77,7 +84,8 @@ input[type="number"] {
   padding: 8px 6px 8px 10px;
   /* background-color: #eee; */
   /* background-color: #fffb9f; */
-  background-color: #98b36c;
+  /* background-color: #98b36c; */
+  background-color: #fffa92;
   cursor: default;
   cursor: pointer;
 }
@@ -101,6 +109,11 @@ input[type="number"] {
   /* border: 1px solid #1c0b6c; */
   border-radius: 4px;
   position: relative;
+  /* border: .1px solid #ababa7; */
+}
+
+.event:focus-visible {
+  background-color: #1f0e4f;
 }
 
 .event:nth-child(2n) {
@@ -112,11 +125,13 @@ input[type="number"] {
 }
 
 p:nth-child(2n) {
-  color: #98b36c;
+  /* color: #98b36c; */
+  color: #499b7f;
 }
 
 h3 {
-  color: #e88e5e;
+  /* color: #e88e5e; */
+  color: #e41b0d;
   text-shadow: 0.5px 0.5px #dadada;
 }
 
@@ -174,14 +189,14 @@ input:focus-visible {
 }
 
 li:nth-child(2n) > button {
-  background-color: #fafff240;
-  color: #1f0e4f;
+  /* background-color: #fafff240;
+  color: #1f0e4f; */
 }
 
 li:nth-child(2n) > .details > p {
-  background-color: #200e50;
+  /* background-color: #200e50;
   padding: 82px;
-  border-radius: 8px;
+  border-radius: 8px; */
 }
 
 li:nth-child(2n) > .details > p:nth-of-type(2) {
