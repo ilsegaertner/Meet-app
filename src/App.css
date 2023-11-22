@@ -94,18 +94,25 @@ input[type="number"] {
 }
 
 .event {
-  padding: 10px 10px 35px;
+  padding: 39px 44px 47px 48px;
   margin-bottom: 10px;
   text-align: left;
   /* border: 1px solid #ccc; */
   /* border: 1px solid #1c0b6c; */
-  border-radius: 4px;
+  border-radius: 163px;
   position: relative;
+  /* border: .1px solid #ababa7; */
+  border: 2px solid #7452cc;
+}
+
+.event:focus-visible {
+  background-color: #1f0e4f;
 }
 
 .event:nth-child(2n) {
   background-color: #f9f9f9;
   border-radius: 8px;
+  border: 1px solid #e78e5e00;
 
   /* background: rgb(255,255,255);
   background: linear-gradient(101deg, rgb(163 163 163) 0%, rgb(238 238 238) 100%); */
@@ -180,7 +187,7 @@ li:nth-child(2n) > button {
 
 li:nth-child(2n) > .details > p {
   background-color: #200e50;
-  padding: 82px;
+  padding: 18px;
   border-radius: 8px;
 }
 
