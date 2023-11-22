@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { getEvents, extractLocations } from "./api";
 import Spinner from "./components/Spinner";
 import { InfoAlert } from "./components/Alert";
+import { ErrorAlert } from "./components/Alert";
 
 const App = () => {
   const [events, setEvents] = useState([]);
@@ -14,6 +15,7 @@ const App = () => {
   const [currentCity, setCurrentCity] = useState("See all cities");
   const [loading, setLoading] = useState(false); // spinner
   const [infoAlert, setInfoAlert] = useState("");
+  const [errorAlert, setErrorAlert] = useState("");
 
   useEffect(() => {
     fetchData();
@@ -42,13 +44,17 @@ const App = () => {
       {loading && <Spinner />} {/* Show spinner while loading */}
       <div className="alerts-container">
         {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
+        {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
       </div>
       <CitySearch
         allLocations={allLocations}
         setCurrentCity={setCurrentCity}
         setInfoAlert={setInfoAlert}
       />
-      <NumberOfEvents setCurrentNOE={setCurrentNOE} />
+      <NumberOfEvents
+        setCurrentNOE={setCurrentNOE}
+        setErrorAlert={setErrorAlert}
+      />
       <EventList events={events} />
     </div>
   );
