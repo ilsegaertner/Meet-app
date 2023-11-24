@@ -203,7 +203,7 @@ li:nth-child(2n) > h3 {
   top: -7px;
   left: 60px;
   /* text-shadow: 51px 20px 49px #98b36c; */
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
   width: 178px;
   z-index: 1000;
 }
