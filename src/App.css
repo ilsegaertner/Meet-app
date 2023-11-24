@@ -126,13 +126,13 @@ h3 {
   bottom: 5px;
   padding: 5px 8px;
   border-radius: 4px;
-  margin: 2px 5px;
   outline: none;
   cursor: pointer;
   color: #f9f9f9;
   background-color: #1f0e4f;
   border: 0.6px solid #564f94;
   font-size: 13px;
+  margin: 3px 5px;
 }
 
 .event-numbers {
@@ -193,15 +193,18 @@ li:nth-child(2n) > .details > p:nth-of-type(2) {
 }
 
 li:nth-child(2n) > h3 {
-  color: #000000;
+  /* color: #000000; */
+  color: #e88e5e;
   text-shadow: 0.5px 0.5px #dadada;
 }
 
 .alerts-container {
   position: fixed;
-  top: 0px;
-  left: 20px;
-  width: 250px;
+  top: -7px;
+  left: 60px;
+  /* text-shadow: 51px 20px 49px #98b36c; */
+  mix-blend-mode: luminosity;
+  width: 178px;
   z-index: 1000;
 }
 
