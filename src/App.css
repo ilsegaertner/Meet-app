@@ -2,6 +2,7 @@
 .App {
   text-align: center;
   padding: 2% 5%;
+  /* box-shadow: inset 0px -1px 20px 0px #e78e5e36; */
   /* padding: 7% 15%; */
   /* background-color: #fffcf6; */
   /* background-color: #fafafa33; */
@@ -30,6 +31,7 @@ ul {
 p {
   margin: 5px 0;
   color: #564f94;
+  padding-left: 10px;
 }
 
 input[type="text"],
@@ -106,6 +108,8 @@ input[type="number"] {
 .event:nth-child(2n) {
   background-color: #f9f9f9;
   border-radius: 8px;
+  padding: 10px 0px 36px;
+  margin-top: 34px;
 
   /* background: rgb(255,255,255);
   background: linear-gradient(101deg, rgb(163 163 163) 0%, rgb(238 238 238) 100%); */
@@ -113,17 +117,20 @@ input[type="number"] {
 
 p:nth-child(2n) {
   color: #98b36c;
+  /* padding: 9px; */
+  margin-left: 10px;
+  line-height: 1.43;
 }
 
 h3 {
   color: #e88e5e;
-  text-shadow: 0.5px 0.5px #dadada;
+  /* text-shadow: 0.5px 0.5px #dadada; */
 }
 
 .details-btn {
   position: absolute;
-  right: 5px;
-  bottom: 5px;
+  right: 1px;
+  bottom: -4px;
   padding: 5px 8px;
   border-radius: 4px;
   outline: none;
@@ -132,7 +139,7 @@ h3 {
   background-color: #1f0e4f;
   border: 0.6px solid #564f94;
   font-size: 13px;
-  margin: 3px 5px;
+  margin: 0px -5px;
 }
 
 .event-numbers {
@@ -177,13 +184,18 @@ input:focus-visible {
 li:nth-child(2n) > button {
   background-color: #fafff240;
   color: #1f0e4f;
+  /* margin: 2px -5px; */
 }
 
 li:nth-child(2n) > .details > p {
   background-color: #200e50;
-  padding: 60px;
-  margin-top: -6px;
-  border-radius: 30px;
+  /* padding: 60px; */
+  margin-top: -11px;
+  border-radius: 4px;
+  padding: 10px 16px;
+  min-height: 193px;
+  display: flex;
+  align-items: center;
 }
 
 li:nth-child(2n) > .details > p:nth-of-type(2) {
@@ -193,15 +205,24 @@ li:nth-child(2n) > .details > p:nth-of-type(2) {
 }
 
 li:nth-child(2n) > h3 {
-  /* color: #000000; */
-  color: #e88e5e;
+  color: #000000;
+  /* color: #e88e5e; */
   text-shadow: 0.5px 0.5px #dadada;
+  /* padding-left: 10px; */
+  margin-bottom: 29px;
+  margin-top: 3px;
+  padding-left: 10px;
+}
+
+li:nth-child(2n) > p {
+  margin-bottom: -2px;
+  margin-left: 0px;
 }
 
 .alerts-container {
   position: fixed;
   top: -7px;
-  left: 60px;
+  left: 52px;
   /* text-shadow: 51px 20px 49px #98b36c; */
   /* mix-blend-mode: luminosity; */
   width: 178px;
@@ -210,4 +231,26 @@ li:nth-child(2n) > h3 {
 
 .event:nth-child(1) {
   margin-top: 144px;
+}
+
+h4 {
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+li:nth-child(odd) > .details:nth-child(odd) > h4 {
+  padding-left: 0px;
+}
+
+li:nth-child(odd) > .details:nth-child(odd) > p {
+  margin-left: -10px;
+}
+
+/* p:nth-child(1n) {
+  margin-left: -5px;
+} */
+
+li:nth-child(odd) > p {
+  margin-left: -10px;
+  margin-bottom: -2px;
 }
