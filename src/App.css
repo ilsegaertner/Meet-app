@@ -126,6 +126,7 @@ h3 {
   bottom: 5px;
   padding: 5px 8px;
   border-radius: 4px;
+  margin: 2px 5px;
   outline: none;
   cursor: pointer;
   color: #f9f9f9;
@@ -180,8 +181,9 @@ li:nth-child(2n) > button {
 
 li:nth-child(2n) > .details > p {
   background-color: #200e50;
-  padding: 82px;
-  border-radius: 8px;
+  padding: 60px;
+  margin-top: -6px;
+  border-radius: 30px;
 }
 
 li:nth-child(2n) > .details > p:nth-of-type(2) {
@@ -201,4 +203,8 @@ li:nth-child(2n) > h3 {
   left: 20px;
   width: 250px;
   z-index: 1000;
+}
+
+.event:nth-child(1) {
+  margin-top: 144px;
 }
