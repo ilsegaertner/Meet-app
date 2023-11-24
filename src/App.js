@@ -7,6 +7,7 @@ import { getEvents, extractLocations } from "./api";
 import Spinner from "./components/Spinner";
 import { InfoAlert } from "./components/Alert";
 import { ErrorAlert } from "./components/Alert";
+import { WarningAlert } from "./components/Alert";
 
 const App = () => {
   const [events, setEvents] = useState([]);
@@ -16,8 +17,20 @@ const App = () => {
   const [loading, setLoading] = useState(false); // spinner
   const [infoAlert, setInfoAlert] = useState("");
   const [errorAlert, setErrorAlert] = useState("");
+  const [warningAlert, setWarningAlert] = useState("");
 
   useEffect(() => {
+    let infoText;
+    if (navigator.onLine) {
+      // set the warning alert message to an empty string ""
+      infoText = "";
+      setWarningAlert(infoText);
+    } else {
+      // set the warning alert message to a non-empty string
+      infoText =
+        "As you are offline the displayed list has been loaded from your last visit";
+      setWarningAlert(infoText);
+    }
     fetchData();
   }, [currentCity, currentNOE]);
 
@@ -45,6 +58,7 @@ const App = () => {
       <div className="alerts-container">
         {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
         {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
+        {warningAlert.length ? <WarningAlert text={warningAlert} /> : null}
       </div>
       <CitySearch
         allLocations={allLocations}
