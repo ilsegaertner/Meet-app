@@ -15,7 +15,7 @@ class Alert extends Component {
       borderStyle: "solid",
       fontWeight: "bolder",
       borderRadius: "7px",
-      borderColor: this.color,
+      borderColor: this.borderColor,
       textAlign: "center",
       fontSize: "12px",
       margin: "10px 0",
@@ -36,7 +36,8 @@ class InfoAlert extends Alert {
   constructor(props) {
     super(props);
     this.color = "rgb(0, 0, 255)"; // blue
-    this.bgColor = "rgb(220, 220, 255)"; // light blue
+    this.bgColor = "rgb(249, 249, 249)"; //
+    this.borderColor = "rgb(0, 0, 255)";
   }
 }
 
@@ -44,8 +45,18 @@ class ErrorAlert extends Alert {
   constructor(props) {
     super(props);
     this.color = "rgb(255, 0, 0)";
-    this.bgColor = "rgb(255, 204, 204)";
+    this.bgColor = "rgb(249, 249, 249)";
+    this.borderColor = "rgb(255, 0, 0)";
   }
 }
 
-export { InfoAlert, ErrorAlert };
+class WarningAlert extends Alert {
+  constructor(props) {
+    super(props);
+    this.color = "rgb(255, 206, 0)";
+    this.bgColor = "rgb(249, 249, 249)";
+    this.borderColor = "rgb(255, 206, 0)";
+  }
+}
+
+export { InfoAlert, ErrorAlert, WarningAlert };
