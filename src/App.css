@@ -184,6 +184,7 @@ input:focus-visible {
 li:nth-child(2n) > button {
   background-color: #fafff240;
   color: #1f0e4f;
+  border: 0.6px solid #0000ff;
   /* margin: 2px -5px; */
 }
 
