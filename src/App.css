@@ -118,8 +118,9 @@ input[type="number"] {
 p:nth-child(2n) {
   color: #98b36c;
   /* padding: 9px; */
-  margin-left: 10px;
+  /* margin-left: 10px; */
   line-height: 1.43;
+  margin-right: 6px;
 }
 
 h3 {
@@ -139,7 +140,7 @@ h3 {
   background-color: #1f0e4f;
   border: 0.6px solid #564f94;
   font-size: 13px;
-  margin: 0px -5px;
+  margin: 10px 5px;
 }
 
 .event-numbers {
@@ -192,8 +193,10 @@ li:nth-child(2n) > .details > p {
   background-color: #200e50;
   /* padding: 60px; */
   margin-top: -11px;
-  border-radius: 4px;
-  padding: 10px 16px;
+  /* border-radius: 4px; */
+  border-top-right-radius: 4vh;
+  border-bottom-right-radius: 4vh;
+  padding: 28px 15px;
   min-height: 193px;
   display: flex;
   align-items: center;
@@ -208,7 +211,7 @@ li:nth-child(2n) > .details > p:nth-of-type(2) {
 li:nth-child(2n) > h3 {
   color: #000000;
   /* color: #e88e5e; */
-  text-shadow: 0.5px 0.5px #dadada;
+  /* text-shadow: 0.5px 0.5px #dadada; */
   /* padding-left: 10px; */
   margin-bottom: 29px;
   margin-top: 3px;
