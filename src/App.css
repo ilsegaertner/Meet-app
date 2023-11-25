@@ -30,23 +30,24 @@ ul {
 
 p {
   margin: 5px 0;
-  color: #d9cdf9;
+  color: #7cff4b;
   padding-left: 10px;
 }
 
 input[type="text"],
 input[type="number"] {
   padding: 8px 6px 8px 10px;
-  border-radius: 4px;
+  border-radius: 19px;
   outline: none;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   /* border: 1px solid #200e50; */
-  background-color: #f9f9f9;
+  background-color: #200e50;
   /* font-size: 14px; */
   font-size: 18px;
+  color: #e7edba;
   line-height: 20px;
   align-self: center;
-  height: 36px;
+  height: 41px;
   margin-bottom: 20px;
 }
 
@@ -79,9 +80,14 @@ input[type="number"] {
   padding: 8px 6px 8px 10px;
   /* background-color: #eee; */
   /* background-color: #fffb9f; */
-  background-color: #98b36c;
+  background-color: #ff884a;
   cursor: default;
   cursor: pointer;
+  /* color: #00058f; */
+  color: #1f23a3;
+  border: 6px solid #0710ff;
+  border-radius: 19px;
+  margin: -2px;
 }
 
 .suggestions > li:last-child {
@@ -117,7 +123,8 @@ input[type="number"] {
 
 p:nth-child(2n) {
   /* color: #98b36c; */
-  color: #fcffcbe0;
+  /* color: #dcceae; */
+  color: #e8f0cd;
   /* padding: 9px; */
   /* margin-left: 10px; */
   line-height: 1.43;
@@ -126,7 +133,7 @@ p:nth-child(2n) {
 
 h3 {
   /* color: #e88e5e; */
-  color: #dcdcdc;
+  color: #fffee8;
   /* text-shadow: 0.5px 0.5px #dadada; */
 }
 
@@ -149,6 +156,7 @@ h3 {
   margin: 1px 1px;
   padding: 1px 3px;
   border-radius: 4px;
+  background-color: #cdced5;
   /* border: 1px solid #200e50; */
   border: 1px solid #ccc;
   align-self: center;
@@ -164,7 +172,7 @@ h3 {
 .number-of-events-label {
   /* font-size: 0.95rem; */
   font-size: 1rem;
-  color: #757575;
+  color: #ff874b;
 }
 
 .details {
@@ -185,8 +193,8 @@ input:focus-visible {
 }
 
 li:nth-child(2n) > button {
-  background-color: #fafff240;
-  color: #1f0e4f;
+  background-color: #1f0e4f;
+  color: #f9f9f9;
   border: 0.6px solid #0000ff;
   /* margin: 2px -5px; */
 }
@@ -211,7 +219,8 @@ li:nth-child(2n) > .details > p:nth-of-type(2) {
 }
 
 li:nth-child(2n) > h3 {
-  color: #000000;
+  /* color: #000000; */
+  color: #fffee8;
   /* color: #e88e5e; */
   /* text-shadow: 0.5px 0.5px #dadada; */
   /* padding-left: 10px; */
