@@ -30,7 +30,8 @@ ul {
 
 p {
   margin: 5px 0;
-  color: #564f94;
+  /* color: #564f94; */
+  color: #5d72ff;
   padding-left: 10px;
 }
 
@@ -79,7 +80,9 @@ input[type="number"] {
   padding: 8px 6px 8px 10px;
   /* background-color: #eee; */
   /* background-color: #fffb9f; */
-  background-color: #98b36c;
+  /* background-color: #98b36c; */
+  background-color: #f7f9ff;
+  /* background-color: #fafff7; */
   cursor: default;
   cursor: pointer;
 }
@@ -91,8 +94,11 @@ input[type="number"] {
 
 .suggestions > li:hover {
   /* background-color: #bcdcdb; */
-  background-color: #1f0e4f;
-  color: #f9f9f9;
+  /* background-color: #1f0e4f; */
+  background-color: #fafff7;
+  /* background-color: #f7f9ff; */
+  /* color: #f9f9f9; */
+  color: #44323c;
 }
 
 .event {
@@ -116,7 +122,8 @@ input[type="number"] {
 }
 
 p:nth-child(2n) {
-  color: #98b36c;
+  /* color: #98b36c; */
+  color: #242327;
   /* padding: 9px; */
   /* margin-left: 10px; */
   line-height: 1.43;
@@ -124,7 +131,8 @@ p:nth-child(2n) {
 }
 
 h3 {
-  color: #e88e5e;
+  /* color: #e88e5e; */
+  color: #4c433e;
   /* text-shadow: 0.5px 0.5px #dadada; */
 }
 
@@ -137,7 +145,8 @@ h3 {
   outline: none;
   cursor: pointer;
   color: #f9f9f9;
-  background-color: #1f0e4f;
+  /* background-color: #1f0e4f; */
+  background-color: #202020;
   border: 0.6px solid #564f94;
   font-size: 13px;
   margin: 10px 5px;
@@ -156,7 +165,9 @@ h3 {
 
 .event-numbers:focus {
   /* background-color: #ff4444d1; */
-  background-color: #e78e5e;
+  /* background-color: #e78e5e; */
+  /* background-color: #f7ffe4; */
+  background-color: #fafff7;
 }
 
 .number-of-events-label {
@@ -185,12 +196,14 @@ input:focus-visible {
 li:nth-child(2n) > button {
   background-color: #fafff240;
   color: #1f0e4f;
-  border: 0.6px solid #0000ff;
+  /* border: 0.6px solid #0000ff; */
+  border: 0.6px solid #5d71ff;
   /* margin: 2px -5px; */
 }
 
 li:nth-child(2n) > .details > p {
-  background-color: #200e50;
+  /* background-color: #200e50; */
+  background-color: #161616;
   /* padding: 60px; */
   margin-top: -11px;
   /* border-radius: 4px; */
@@ -199,6 +212,7 @@ li:nth-child(2n) > .details > p {
   padding: 28px 15px;
   min-height: 193px;
   display: flex;
+  color: #e4e6dd;
   align-items: center;
 }
 
