@@ -331,7 +331,7 @@ li:nth-child(odd) > p {
   /* max-width: 70vw; */
   margin: 0 auto;
   gap: 2vw;
-  flex-basis: 603px;
+  flex-basis: 60vw;
 }
 
 @media (max-width: 768px) {
