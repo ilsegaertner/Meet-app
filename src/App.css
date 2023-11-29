@@ -12,9 +12,13 @@
   border-radius: 4vh;
   padding: 28px;
 
-  background: linear-gradient(white, white) padding-box,
-    linear-gradient(to right, #200e50, #98b36c) border-box;
+  /* background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #200e50, #98b36c) border-box; */
   /* border-radius: 50em; */
+
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #200e50, #3c205a) border-box;
+
   border: 4px solid transparent;
   font-size: 18px;
 }
@@ -119,6 +123,18 @@ input[type="number"] {
 
   /* background: rgb(255,255,255);
   background: linear-gradient(101deg, rgb(163 163 163) 0%, rgb(238 238 238) 100%); */
+}
+
+.event:nth-child(4n) {
+  background-color: #f2ecf1;
+}
+
+/* .event:nth-child(5n) {
+  background-color: #d9cbb94f;
+} */
+
+.event:nth-child(5n) {
+  background-color: #d3d9b92e;
 }
 
 p:nth-child(2n) {

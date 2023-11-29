@@ -9,6 +9,7 @@ import {
   ResponsiveContainer,
   Pie,
   PieChart,
+  Cell,
 } from "recharts";
 
 const EventGenresChart = ({ events }) => {
@@ -48,7 +49,7 @@ const EventGenresChart = ({ events }) => {
       <text
         x={x}
         y={y}
-        fill="#8884d8"
+        fill="#202020"
         textAnchor={x > cx ? "start" : "end"}
         dominantBaseline="central"
       >
@@ -57,17 +58,25 @@ const EventGenresChart = ({ events }) => {
     ) : null;
   };
 
+  const colors = ["#fffee8", "#202020", "#ffcccc", "#f7f9ff", "#fafff7"];
+
   return (
     <ResponsiveContainer width="99%" height={400}>
-      <PieChart>
+      <PieChart width={730} height={250}>
         <Pie
           data={data}
+          cx="50%"
+          cy="50%"
           dataKey="value"
           fill="#8884d8"
           labelLine={false}
           label={renderCustomizedLabel}
           outerRadius={130}
-        />
+        >
+          {data.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={colors[index]} />
+          ))}
+        </Pie>
       </PieChart>
     </ResponsiveContainer>
   );
