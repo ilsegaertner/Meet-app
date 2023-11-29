@@ -272,3 +272,15 @@ li:nth-child(odd) > p {
   margin-left: -10px;
   margin-bottom: -2px;
 }
+
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .charts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
