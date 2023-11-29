@@ -57,25 +57,27 @@ const App = () => {
   return (
     <div className="App">
       {loading && <Spinner />} {/* Show spinner while loading */}
-      <div className="alerts-container">
-        {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
-        {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
-        {warningAlert.length ? <WarningAlert text={warningAlert} /> : null}
-      </div>
-      <div className="header-container">
-        <CitySearch
-          allLocations={allLocations}
-          setCurrentCity={setCurrentCity}
-          setInfoAlert={setInfoAlert}
-        />
-        <NumberOfEvents
-          setCurrentNOE={setCurrentNOE}
-          setErrorAlert={setErrorAlert}
-        />
-      </div>
-      <div className="charts-container">
-        <EventGenresChart events={events} />
-        <CityEventsChart allLocations={allLocations} events={events} />
+      <div className="head-wrapper">
+        <div className="alerts-container">
+          {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
+          {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
+          {warningAlert.length ? <WarningAlert text={warningAlert} /> : null}
+        </div>
+        <div className="header-container">
+          <CitySearch
+            allLocations={allLocations}
+            setCurrentCity={setCurrentCity}
+            setInfoAlert={setInfoAlert}
+          />
+          <NumberOfEvents
+            setCurrentNOE={setCurrentNOE}
+            setErrorAlert={setErrorAlert}
+          />
+        </div>
+        <div className="charts-container">
+          <EventGenresChart events={events} />
+          <CityEventsChart allLocations={allLocations} events={events} />
+        </div>
       </div>
       <EventList events={events} />
     </div>
