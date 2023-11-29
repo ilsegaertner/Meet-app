@@ -64,6 +64,7 @@ const App = () => {
           {warningAlert.length ? <WarningAlert text={warningAlert} /> : null}
         </div>
         <div className="header-container">
+          <h1>Meet App</h1>
           <CitySearch
             allLocations={allLocations}
             setCurrentCity={setCurrentCity}
