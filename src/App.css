@@ -85,23 +85,25 @@ input[type="number"] {
   width: 284px;
 }
 
-#city-search {
+/* #city-search {
   display: flex;
   flex-direction: column;
   margin: auto;
   position: relative;
-}
+} */
 
 .suggestions {
-  width: 250px;
+  /* width: 250px; */
+  width: 286px;
   position: absolute;
-  top: 45px;
+  /* top: 45px; */
+  top: 36px;
   z-index: 2;
   align-self: center;
   margin: 0;
   /* font-size: 14px; */
   font-size: 18px;
-  box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 12px -12px rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
 
@@ -109,9 +111,10 @@ input[type="number"] {
   text-align: left;
   padding: 8px 6px 8px 10px;
   /* background-color: #eee; */
-  /* background-color: #fffb9f; */
+  background-color: #fffb9f;
   /* background-color: #98b36c; */
-  background-color: #f7f9ff;
+  /* background-color: #f7f9ff; */
+  /* background-color: 5d71ff4f; */
   /* background-color: #fafff7; */
   cursor: default;
   cursor: pointer;
@@ -125,10 +128,12 @@ input[type="number"] {
 .suggestions > li:hover {
   /* background-color: #bcdcdb; */
   /* background-color: #1f0e4f; */
-  background-color: #fafff7;
+  /* background-color: #fafff7; */
+  background-color: #f3ef8c;
   /* background-color: #f7f9ff; */
   /* color: #f9f9f9; */
-  color: #44323c;
+  /* color: #44323c; */
+  color: #494b57;
 }
 
 .event {

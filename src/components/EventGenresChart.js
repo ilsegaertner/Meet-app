@@ -10,6 +10,7 @@ import {
   Pie,
   PieChart,
   Cell,
+  Legend,
 } from "recharts";
 
 const EventGenresChart = ({ events }) => {
@@ -58,7 +59,7 @@ const EventGenresChart = ({ events }) => {
     ) : null;
   };
 
-  const colors = ["#fffee8", "#202020", "#ffcccc", "#f7f9ff", "#fafff7"];
+  const colors = ["#b5bd44", "#202020", "#ffcccc", "#82d498", "#a48fb7"];
 
   return (
     <ResponsiveContainer width="99%" height={400}>
@@ -77,6 +78,7 @@ const EventGenresChart = ({ events }) => {
             <Cell key={`cell-${index}`} fill={colors[index]} />
           ))}
         </Pie>
+        <Legend verticalAlign="top" height={36} />
       </PieChart>
     </ResponsiveContainer>
   );
