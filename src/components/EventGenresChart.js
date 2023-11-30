@@ -39,20 +39,22 @@ const EventGenresChart = ({ events }) => {
     cy,
     midAngle,
     outerRadius,
+    innerRadius,
     percent,
     index,
   }) => {
     const RADIAN = Math.PI / 180;
-    const radius = outerRadius;
+    const radius = innerRadius + (outerRadius - innerRadius) * 0.4;
     const x = cx + radius * Math.cos(-midAngle * RADIAN) * 1.07;
     const y = cy + radius * Math.sin(-midAngle * RADIAN) * 1.07;
     return percent ? (
       <text
         x={x}
         y={y}
-        fill="#202020"
-        textAnchor={x > cx ? "start" : "end"}
-        dominantBaseline="central"
+        fill="#5d72ff"
+        fontSize={14}
+        textAnchor={x > cx ? "end" : "start"}
+        dominantBaseline="text-before-edge"
       >
         {`${genres[index]} ${(percent * 100).toFixed(0)}%`}
       </text>
@@ -72,13 +74,13 @@ const EventGenresChart = ({ events }) => {
           fill="#8884d8"
           labelLine={false}
           label={renderCustomizedLabel}
-          outerRadius={130}
+          outerRadius={100}
         >
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={colors[index]} />
           ))}
         </Pie>
-        <Legend verticalAlign="top" height={36} />
+        <Legend verticalAlign="top" height={12} />
       </PieChart>
     </ResponsiveContainer>
   );
