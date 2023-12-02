@@ -149,12 +149,12 @@ input[type="number"] {
 }
 
 .event {
-  padding: 10px 10px 26px;
+  padding: 0px 10px 26px;
   margin-bottom: 10px;
   text-align: left;
   /* border: 1px solid #ccc; */
   /* border: 1px solid #1c0b6c; */
-  border: 0.1px solid #ffe8d2;
+  /* border: 0.1px solid #ffe8d2; */
   border-radius: 4px;
   position: relative;
   max-width: 380px;
@@ -163,7 +163,7 @@ input[type="number"] {
 .event:nth-child(2n) {
   background-color: #f9f9f9;
   border-radius: 4px;
-  padding: 10px 0px 36px;
+  padding: 0px 0px 26px;
   /* margin-top: 34px; */
 
   /* background: rgb(255,255,255);
@@ -171,7 +171,7 @@ input[type="number"] {
 }
 
 .event:nth-child(4n) {
-  background-color: #f2ecf1;
+  /* background-color: #f2ecf1; */
 }
 
 /* .event:nth-child(5n) {
@@ -179,7 +179,7 @@ input[type="number"] {
 } */
 
 .event:nth-child(5n) {
-  background-color: #d3d9b92e;
+  /* background-color: #d3d9b92e; */
 }
 
 p:nth-child(2n) {
@@ -194,6 +194,7 @@ p:nth-child(2n) {
 h3 {
   /* color: #e88e5e; */
   color: #4c433e;
+  text-decoration: overline;
   /* text-shadow: 0.5px 0.5px #dadada; */
 }
 
@@ -367,8 +368,8 @@ li:nth-child(odd) > .details:nth-child(odd) > p {
 li:nth-child(odd) > p {
   margin-left: -10px;
   /* margin-bottom: -2px; */
-  margin-bottom: 11px;
-  margin-top: -9px;
+  /* margin-bottom: 11px;
+  margin-top: -9px; */
 }
 
 .charts-container {
