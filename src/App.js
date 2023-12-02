@@ -79,10 +79,11 @@ const App = () => {
           <EventGenresChart events={events} />
           <CityEventsChart allLocations={allLocations} events={events} />
         </div>
-      </div>
-      <h1 className="event-span">Events:</h1>
-      <div className="event-wrapper">
-        <EventList events={events} />
+
+        <div className="event-wrapper">
+          <h1 className="event-span">Events:</h1>
+          <EventList events={events} />
+        </div>
       </div>
     </div>
   );
