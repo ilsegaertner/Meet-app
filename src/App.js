@@ -81,7 +81,7 @@ const App = () => {
         </div>
 
         <div className="event-wrapper">
-          <h1 className="event-span">Events:</h1>
+          <h1 className="event-span">Events</h1>
           <EventList events={events} />
         </div>
       </div>
