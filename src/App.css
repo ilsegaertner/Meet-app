@@ -161,8 +161,8 @@ input[type="number"] {
 }
 
 .event:nth-child(2n) {
-  background-color: #f9f9f9;
-  border-radius: 4px;
+  /* background-color: #f9f9f9; */
+  /* border-radius: 4px; */
   padding: 0px 0px 26px;
   /* margin-top: 34px; */
 
@@ -223,7 +223,7 @@ h3 {
 .details-btn {
   position: absolute;
   right: 1px;
-  bottom: -4px;
+  /* bottom: -4px; */
   padding: 5px 8px;
   border-radius: 4px;
   outline: none;
@@ -233,7 +233,7 @@ h3 {
   background-color: #202020;
   border: 0.6px solid #564f94;
   font-size: 13px;
-  margin: 10px 5px;
+  margin: 0px 5px;
 }
 
 .event-numbers {
@@ -278,10 +278,10 @@ input:focus-visible {
 }
 
 li:nth-child(2n) > button {
-  background-color: #fafff240;
-  color: #1f0e4f;
+  /* background-color: #fafff240;
+  color: #1f0e4f; */
   /* border: 0.6px solid #0000ff; */
-  border: 0.6px solid #5d71ff;
+  /* border: 0.6px solid #5d71ff; */
   /* margin: 2px -5px; */
 }
 
