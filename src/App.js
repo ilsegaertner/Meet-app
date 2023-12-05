@@ -10,6 +10,7 @@ import { ErrorAlert } from "./components/Alert";
 import { WarningAlert } from "./components/Alert";
 import CityEventsChart from "./components/CityEventsChart";
 import EventGenresChart from "./components/EventGenresChart";
+import logo from "./group-16.jpg";
 
 const App = () => {
   const [events, setEvents] = useState([]);
@@ -57,6 +58,7 @@ const App = () => {
   return (
     <div className="App">
       {loading && <Spinner />} {/* Show spinner while loading */}
+      {/* <img src={logo} alt="logo" /> */}
       <div className="head-wrapper">
         <div className="alerts-container">
           {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}

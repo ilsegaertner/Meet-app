@@ -6,6 +6,8 @@ The objective of this app is a serverless, progressive web application (PWA) wit
 test-driven development (TDD) technique. The application uses the Google
 Calendar API to fetch upcoming events.
 
+![Alt text](https://file%252B.vscode-resource.vscode-cdn.net/Users/joachimprugl/Desktop/Bildschirmfoto%25202023-12-05%2520um%252015.39.53.png?version%253D1701787221824)
+
 ## Context
 
 The idea behind this project lies in creating an app in the context of serverless and PWAs which are both considered to
@@ -14,6 +16,8 @@ be the future of web development.
 - Serverless: No backend maintenance, easy to scale, always available, no cost for idle time.
 - PWAs: Instant loading, offline support, push notifications, “add to home screen” prompt,
   responsive design, and cross-platform compatibility.
+
+![Alt text](https://file%252B.vscode-resource.vscode-cdn.net/Users/joachimprugl/Desktop/Bildschirmfoto%25202023-12-05%2520um%252015.39.36.png?version%253D1701787250432)
 
 ## Approach
 
