@@ -6,7 +6,7 @@ The objective of this app is a serverless, progressive web application (PWA) wit
 test-driven development (TDD) technique. The application uses the Google
 Calendar API to fetch upcoming events.
 
-![Alt text](https://file%252B.vscode-resource.vscode-cdn.net/Users/joachimprugl/Desktop/Bildschirmfoto%25202023-12-05%2520um%252015.39.53.png?version%253D1701787221824)
+![Alt text](https://file%252B.vscode-resource.vscode-cdn.net/Users/joachimprugl/Documents/GitHub/todo/Meet-app/meet/img/screen2.png?version%253D1701787849107)
 
 ## Context
 
