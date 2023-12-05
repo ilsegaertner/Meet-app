@@ -6,7 +6,7 @@ The objective of this app is a serverless, progressive web application (PWA) wit
 test-driven development (TDD) technique. The application uses the Google
 Calendar API to fetch upcoming events.
 
-<img width="223" alt="Screenshot 1 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen1.png"><img width="223" alt="Screenshot 1 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen4.png">
+<img width="223" alt="Screenshot 1 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen1.png"><img width="223" alt="Screenshot 1 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen4.png"><img width="223" alt="Screenshot 1 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen3.png">
 
 ![Alt text](https://file%252B.vscode-resource.vscode-cdn.net/Users/joachimprugl/Documents/GitHub/todo/Meet-app/meet/img/screen2.png?version%253D1701787849107)
 
