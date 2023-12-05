@@ -6,9 +6,7 @@ The objective of this app is a serverless, progressive web application (PWA) wit
 test-driven development (TDD) technique. The application uses the Google
 Calendar API to fetch upcoming events.
 
-<img width="223" alt="Screenshot 1 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen1.png"><img width="223" alt="Screenshot 1 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen4.png"><img width="223" alt="Screenshot 1 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen3.png">
-
-![Alt text](https://file%252B.vscode-resource.vscode-cdn.net/Users/joachimprugl/Documents/GitHub/todo/Meet-app/meet/img/screen2.png?version%253D1701787849107)
+<img width="223" alt="Screenshot 1 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen1.png"><img width="223" alt="Screenshot 4 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen4.png"><img width="223" alt="Screenshot 3 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen3.png">
 
 ## Context
 
@@ -19,8 +17,6 @@ be the future of web development.
 - PWAs: Instant loading, offline support, push notifications, “add to home screen” prompt,
   responsive design, and cross-platform compatibility.
 
-![Alt text](https://file%252B.vscode-resource.vscode-cdn.net/Users/joachimprugl/Desktop/Bildschirmfoto%25202023-12-05%2520um%252015.39.36.png?version%253D1701787250432)
-
 ## Approach
 
 - TDD: Writing tests before implementing code.
@@ -30,6 +26,8 @@ be the future of web development.
 To see the hosted App, click <a href="https://ilsegaertner.github.io/Meet-app/" target="_blank">here</a>.
 
  <!-- [here](https://ilsegaertner.github.io/Meet-app/). -->
+
+<img width="1023" alt="Screenshot 2 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen2.png">
 
 ## Project requirements and features
 
