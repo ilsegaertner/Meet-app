@@ -1,4 +1,4 @@
-### Meet app: A Serverless Progressive Web Application with React
+# Meet app: A Serverless Progressive Web Application with React
 
 ## Objective
 
