@@ -1,29 +1,24 @@
-### Meet app
+### Meet app: A Serverless Progressive Web Application with React
 
 ## Objective
 
-The objective of this app is a serverless, progressive web application (PWA) with React using a
-test-driven development (TDD) technique. The application uses the Google
-Calendar API to fetch upcoming events.
+Meet App is a serverless, progressive web application (PWA) developed using React with a focus on test-driven development (TDD) techniques. The application uses the Google Calendar API to fetch upcoming events.
 
 <img width="223" alt="Screenshot 1 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen1.png"><img width="223" alt="Screenshot 4 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen4.png"><img width="223" alt="Screenshot 3 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen3.png">
 
 ## Context
 
-The idea behind this project lies in creating an app in the context of serverless and PWAs which are both considered to
-be the future of web development.
+The idea behind this project lies in creating an app along serverless and PWA paradigms.
 
-- Serverless: No backend maintenance, easy to scale, always available, no cost for idle time.
-- PWAs: Instant loading, offline support, push notifications, “add to home screen” prompt,
-  responsive design, and cross-platform compatibility.
+- Serverless: No backend maintenance, ensures scalability, always available, no cost for idle time.
+- PWAs: Offers instant loading, offline support, push notifications, “add to home screen” prompt,responsive design, and cross-platform compatibility.
 
 ## Approach
 
-- TDD: Writing tests before implementing code.
-- visual context through graphs to display any type of data and produce a variety of output formats:
-  The app will allow users to search for a city and get a list of events hosted in that city. Two charts shows how many events will take place in each location, as well as the popularity of event genres.
+- Test-Driven Development TDD: Prioritizing test-writing before code implementation to ensure robustness and reliability.
+- Visual Context Through Graphs: Utilizing graphical representations to present various data and output formats. The app allows users to search for events in a city and visualize event data through intuitive charts
 
-To see the hosted App, click <a href="https://ilsegaertner.github.io/Meet-app/" target="_blank">here</a>.
+To access the hosted App, click <a href="https://ilsegaertner.github.io/Meet-app/" target="_blank">here</a>.
 
  <!-- [here](https://ilsegaertner.github.io/Meet-app/). -->
 
@@ -33,29 +28,24 @@ To see the hosted App, click <a href="https://ilsegaertner.github.io/Meet-app/" 
 
 Features:
 
-- Filter Events by City.
-- Show/Hide Event Details.
-- Specify Number of Events.
-- Use the App When Offline.
-- Add an App Shortcut to the Home Screen.
-- Display Charts Visualizing Event Details.
+- Filter Events by City: Users can filter events based on city.
+- Show/Hide Event Details: Event details can be expanded or collapsed.
+- Specify Number of Events: Users can customize the number of events displayed.
+- Use the App When Offline: Cached data is accessible without an internet connection.
+- Add an App Shortcut to the Home Screen: Installable as a shortcut on device home screens.
+- Display Charts Visualizing Event Details: Visual representation of event data, including the number of upcoming events in each city.
 
 ## Technical facts:
 
-- The app is built in React using
-  - the TDD technique.
-  - the Google Calendar API and OAuth2 authentication flow.
-  - serverless functions (AWS lambda) for the authorization server instead of using a traditional server.
-- Full compatibility, inclusive of IE11.
-- The app displays well on all screen sizes (including mobile and tablet) widths of 1920px and 320px.
-- The app passes Lighthouse’s PWA checklist.
-- Service workers ensure offline functionality
-- Users may be able to install the app on desktop and add the app to their home screen on
-  mobile.
-- Object-Oriented Programming (OOP) for alerts
-- The app visualizes the data of events in comparison.
-- The app is covered by tests with a coverage rate >= 90%.
-- The app is monitored using an online performance monitoring tool.
+- Built with React: Leveraging TDD principles, OAuth2 authentication and the Google Calendar API.
+- Serverless Functions (AWS Lambda): Empowering authorization server functionality without traditional backend infrastructure.
+- Full Compatibility: Ensuring compatibility with IE11 and responsiveness across all screen sizes.
+- Passes Lighthouse's PWA Checklist: Compliant with PWA standards for optimal user experience.
+- Offline Functionality: Service workers enable offline access.
+- User Installation: Users can add the app to their home screen on mobile and desktop devices.
+- Object-Oriented Programming (OOP): Utilized for handling alerts and enhancing user interactions.
+- Test Coverage: Comprehensive test coverage with a rate of >= 90%.
+- Performance Monitoring: Monitored using online performance monitoring tools for continuous optimization.
 
 ## User Stories:
 
@@ -123,4 +113,4 @@ Features:
 
 #####
 
-My meet app will use serverless functions for the business logic of my backend. As step 1, I will create serverless functions to navigate between the OAuth Server and my app to be able to request the Google OAuth consent modal, as well as the redirection between Google and the app. In the second step, my serverless functions handle the exchange of Authorization code and - if successfully granted by OAuth Provide - the final access Access token that enables the user to use the Google Calendar App. The last step also includes the AWS Lambda functions that communicate the successful returning and rendering of the events to the user in the app.
+In the Meet app, serverless functions play a pivotal role in handling the backend business logic. Initially, I will develop serverless functions to facilitate navigation between the OAuth Server and the app. This will enable the app to request the Google OAuth consent modal and manage the redirection between Google and the app. In subsequent stages, these serverless functions will be responsible for managing the exchange of authorization codes and, upon successful authentication by the OAuth Provider, obtaining the final access token necessary for users to utilize the Google Calendar App. Additionally, AWS Lambda functions will be employed to ensure the successful retrieval and rendering of events to users within the app.
