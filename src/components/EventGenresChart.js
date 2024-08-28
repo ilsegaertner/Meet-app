@@ -64,8 +64,8 @@ const EventGenresChart = ({ events }) => {
   const colors = ["#b5bd44", "#202020", "#ffcccc", "#82d498", "#a48fb7"];
 
   return (
-    <ResponsiveContainer width="99%" height={400}>
-      <PieChart width={730} height={250}>
+    <ResponsiveContainer width="99%" height={250}>
+      <PieChart width={730} height={250} className="pie-chart">
         <Pie
           data={data}
           cx="50%"
@@ -80,7 +80,7 @@ const EventGenresChart = ({ events }) => {
             <Cell key={`cell-${index}`} fill={colors[index]} />
           ))}
         </Pie>
-        <Legend verticalAlign="top" height={12} />
+        <Legend verticalAlign="" height={12} className=" " />
       </PieChart>
     </ResponsiveContainer>
   );

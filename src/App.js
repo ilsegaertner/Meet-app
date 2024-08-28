@@ -57,35 +57,37 @@ const App = () => {
 
   return (
     <div className="App">
-      {loading && <Spinner />} {/* Show spinner while loading */}
-      {/* <img src={logo} alt="logo" /> */}
-      <div className="head-wrapper">
-        <div className="alerts-container">
-          {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
-          {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
-          {warningAlert.length ? <WarningAlert text={warningAlert} /> : null}
-        </div>
-        <div className="header-container">
-          <h1>Meet App</h1>
-          <CitySearch
-            allLocations={allLocations}
-            setCurrentCity={setCurrentCity}
-            setInfoAlert={setInfoAlert}
-          />
-          <NumberOfEvents
-            setCurrentNOE={setCurrentNOE}
-            setErrorAlert={setErrorAlert}
-          />
-        </div>
-        <div className="charts-container">
-          <EventGenresChart events={events} />
-          <CityEventsChart allLocations={allLocations} events={events} />
-        </div>
+      <div className="header-container">
+        <h1>Meet App</h1>
+        <CitySearch
+          allLocations={allLocations}
+          setCurrentCity={setCurrentCity}
+          setInfoAlert={setInfoAlert}
+        />
+        <NumberOfEvents
+          setCurrentNOE={setCurrentNOE}
+          setErrorAlert={setErrorAlert}
+        />
+      </div>
+      <div className="App-wrapper">
+        {loading && <Spinner />} {/* Show spinner while loading */}
+        {/* <img src={logo} alt="logo" /> */}
+        <div className="head-wrapper">
+          <div className="alerts-container">
+            {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
+            {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
+            {warningAlert.length ? <WarningAlert text={warningAlert} /> : null}
+          </div>
 
-        <div className="event-wrapper">
-          <h1 className="event-span">Events</h1>
-          <EventList events={events} />
+          <div className="charts-container">
+            <EventGenresChart events={events} />
+            <CityEventsChart allLocations={allLocations} events={events} />
+          </div>
         </div>
+      </div>
+      <div className="event-wrapper">
+        <h1 className="event-span">Events</h1>
+        <EventList events={events} />
       </div>
     </div>
   );
