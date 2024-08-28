@@ -11,9 +11,9 @@ const Event = ({ event }) => {
   return (
     <li className="event">
       <h3>{event.summary}</h3>
-      <p>{event.location}</p>
+      <p className="event-location">{event.location}</p>
       {/* <p>{event.start.dateTime}</p> */}
-      <p>{formattedDate}</p>
+      <p className="event-date">{formattedDate}</p>
 
       <button
         className="details-btn"
@@ -25,11 +25,12 @@ const Event = ({ event }) => {
       </button>
       {showDetails ? (
         <div className="details">
-          <h4>Event Details</h4>
+          {/* <h4>Event Details</h4> */}
           <p> {event.description}</p>
           {/* <p>Event created: {event.created}</p> */}
         </div>
       ) : null}
+      <hr />
     </li>
   );
 };

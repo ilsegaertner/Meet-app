@@ -51,7 +51,7 @@ const EventGenresChart = ({ events }) => {
       <text
         x={x}
         y={y}
-        fill="#5d72ff"
+        fill="#fff"
         fontSize={14}
         textAnchor={x > cx ? "start" : "end"}
         dominantBaseline="central"
