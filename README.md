@@ -4,7 +4,7 @@
 
 Meet App is a serverless, progressive web application (PWA) developed using React with a focus on test-driven development (TDD) techniques. The application uses the Google Calendar API to fetch upcoming events.
 
-<img width="223" alt="Screenshot 1 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion2.png"><img width="223" alt="Screenshot 4 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion3.png">
+<img width="223" alt="Screenshot 3 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion2.png"><img width="223" alt="Screenshot 4 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion3.png">
 
 <!-- <img width="223" alt="Screenshot 3 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion4.png"> -->
 
@@ -24,7 +24,7 @@ To access the hosted App, click <a href="https://ilsegaertner.github.io/Meet-app
 
  <!-- [here](https://ilsegaertner.github.io/Meet-app/). -->
 
-<img width="1023" alt="Screenshot 2 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion1.png">
+<img width="1023" alt="Screenshot 1 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion1.png">
 
 ## Project requirements and features
 
@@ -48,6 +48,8 @@ Features:
 - Object-Oriented Programming (OOP): Utilized for handling alerts and enhancing user interactions.
 - Test Coverage: Comprehensive test coverage with a rate of >= 90%.
 - Performance Monitoring: Monitored using online performance monitoring tools for continuous optimization.
+
+<img width="1023" alt="Screenshot 5 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion5.png">
 
 ## User Stories:
 
