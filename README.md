@@ -4,7 +4,9 @@
 
 Meet App is a serverless, progressive web application (PWA) developed using React with a focus on test-driven development (TDD) techniques. The application uses the Google Calendar API to fetch upcoming events.
 
-<img width="223" alt="Screenshot 1 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion2.png"><img width="223" alt="Screenshot 4 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion3.png"><img width="223" alt="Screenshot 3 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion4.png">
+<img width="223" alt="Screenshot 1 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion2.png"><img width="223" alt="Screenshot 4 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion3.png">
+
+<!-- <img width="223" alt="Screenshot 3 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion4.png"> -->
 
 ## Context
 
