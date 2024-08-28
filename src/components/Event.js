@@ -10,26 +10,31 @@ const Event = ({ event }) => {
 
   return (
     <li className="event">
-      <h3>{event.summary}</h3>
-      <p className="event-location">{event.location}</p>
-      {/* <p>{event.start.dateTime}</p> */}
-      <p className="event-date">{formattedDate}</p>
-
-      <button
-        className="details-btn"
-        onClick={() => {
-          setShowDetails(!showDetails);
-        }}
-      >
-        {showDetails ? "Hide Details" : "Show Details"}
-      </button>
-      {showDetails ? (
-        <div className="details">
-          {/* <h4>Event Details</h4> */}
-          <p> {event.description}</p>
-          {/* <p>Event created: {event.created}</p> */}
+      <div className="event-grid">
+        <div>
+          <h3>{event.summary}</h3>
+          <p className="event-location">{event.location}</p>
+          {/* <p>{event.start.dateTime}</p> */}
+          <p className="event-date">{formattedDate}</p>
+          <button
+            className="details-btn"
+            onClick={() => {
+              setShowDetails(!showDetails);
+            }}
+          >
+            {showDetails ? "Hide Details" : "Show Details"}
+          </button>{" "}
         </div>
-      ) : null}
+        <div className="event-description-wrapper">
+          {showDetails ? (
+            <div className="details">
+              {/* <h4>Event Details</h4> */}
+              <p> {event.description}</p>
+              {/* <p>Event created: {event.created}</p> */}
+            </div>
+          ) : null}{" "}
+        </div>
+      </div>
       <hr />
     </li>
   );

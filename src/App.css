@@ -135,6 +135,16 @@ p {
   background: linear-gradient(45deg, #00c6ff, #565656);
 }
 
+.event-description-wrapper {
+  grid-column: 2/4;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--gap);
+}
+
 .event {
   width: auto;
 }
@@ -149,6 +159,7 @@ h1.event-span {
   background: white;
   display: block;
   border-radius: var(--border-radius);
+  z-index: 2000;
 }
 
 .event-location {
@@ -200,6 +211,7 @@ h1.event-span {
 .details {
   padding: 10px;
   background-color: white;
+  border: var(--border-radius);
 }
 
 input:focus {
