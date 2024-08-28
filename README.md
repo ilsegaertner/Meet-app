@@ -22,7 +22,7 @@ To access the hosted App, click <a href="https://ilsegaertner.github.io/Meet-app
 
  <!-- [here](https://ilsegaertner.github.io/Meet-app/). -->
 
-<img width="1023" alt="Screenshot 2 from app" src="https://github.com/ilsegaertner/Meet-app/blob/main/img/screen2.png">
+<img width="1023" alt="Screenshot 2 from app" src="https://raw.githubusercontent.com/ilsegaertner/Meet-app/main/img/screenshot_newversion1.png">
 
 ## Project requirements and features
 
