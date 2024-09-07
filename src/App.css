@@ -159,7 +159,7 @@ h1.event-span {
   background: white;
   display: block;
   border-radius: var(--border-radius);
-  z-index: 2000;
+  /* z-index: 2000; */
 }
 
 .event-location {
