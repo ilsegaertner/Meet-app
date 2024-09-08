@@ -265,14 +265,21 @@ h4 {
   mix-blend-mode: exclusion;
 }
 
+.bottom {
+  background-color: yellow;
+}
+
+@media all and (max-width: 500px) {
+  .charts-container {
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+
 @media all and (max-width: 770px) {
   #event-list {
     display: flex;
     flex-direction: column;
     gap: var(--gap);
   }
-}
-
-.bottom {
-  background-color: yellow;
 }
